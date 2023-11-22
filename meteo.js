@@ -2,15 +2,15 @@
 const apiKey = "f0c40c019cc018269e9beac8a8f36703";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=saintes";
 
-// function which allows me to search for and retreive the info needed//
+// Function which allows me to search for and retreive the info needed//
 async function whatIsTheWeather(){
     const answer = await fetch(apiUrl + `&appid=${apiKey}`);
     var data = await answer.json();
 
-    // to visualise the info retreived in the console //
+    // To visualise the info retreived in the console //
     console.log(data);
 
-    // info that will be returned//
+    // Info that will be returned//
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + " °C";
     document.querySelector(".humidity").innerHTML = "Humidity " + data.main.humidity + "%";
@@ -18,7 +18,7 @@ async function whatIsTheWeather(){
 
    
     
-// to change icons for differnt types of weather//
+// To change icons for differnt types of weather//
 const icon = document.querySelector(".icon");
 
     if(data.weather[0].main == "clouds"){
@@ -36,6 +36,6 @@ const icon = document.querySelector(".icon");
 function callEveryHour() {
     setInterval(whatIsTheWeather, 1000 * 60 * 60);
 }
-//This is for coder's view to be sure that all is in good working order//
+//To be removed .This is just for coder's view to be sure that all is in good working order//
 whatIsTheWeather();
 
