@@ -1,3 +1,3 @@
-https://github.com/marrietbenoit/Weather_app.git
+https://marrietbenoit.github.io/Weather_app/
 # Weather_app
  project for Simplon
