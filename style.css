@@ -1,0 +1,96 @@
+/* Colors */
+:root {
+  --white:#ffffff;
+  --black: #1b1b1b;
+  --gold: #B7903C;
+--blue:#8AB5F8;
+  }
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-image: url(images/bachground.jpeg);
+    background-size: cover;
+}
+
+h1{
+    color:var(--black)
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    width: 70vw;
+    background-image: url(images/rain.jpeg);
+    background-size: cover;
+    border: 2px solid var(--gold);
+}
+
+.logo{
+    height: 10vh;
+    width: 5.5vw;
+    margin-bottom: 2vh;
+    margin-top:2vh;
+    border: 2px solid var(--gold);
+    background-image: url(images/logo.png);
+    background-size: cover;
+}
+#box{
+border-radius: 25px;
+}
+
+.secondary-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    height: 60vh;
+    width: 60vw;
+  background-color: var(--blue);
+  border: 2px solid var(--gold);
+}
+.second_secondary_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.temperature{ display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 25vh;
+    width: 15vw;
+    margin-top: 1rem;
+}
+
+.humidity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 17vh;
+    width: 10vw;
+}
+
+.wind{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 17vh;
+    width: 10vw;
+}
+
+
+.ct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 17vh;
+    width: 10vw;
+}
