@@ -1,6 +1,6 @@
 
 const apiKey = "f0c40c019cc018269e9beac8a8f36703";
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=saintes";
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=bignay";
 
 // Function which allows me to search for and retreive the info needed//
 async function whatIsTheWeather(){
@@ -14,7 +14,7 @@ async function whatIsTheWeather(){
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + " °C";
     document.querySelector(".humidity").innerHTML = "Humidity " + data.main.humidity + "%";
-    document.querySelector(".wind").innerHTML = data.wind.speed + " kl/h";
+    document.querySelector(".wind").innerHTML = "Wind speed " + data.wind.speed + " kl/h";
 
    
     
